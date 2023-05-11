@@ -1,16 +1,23 @@
 import { Test } from '@/component/test'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import styles from './page.module.scss'
 
 export default function Home() {
   const asd2 = '/'
   const asd = '/about'
+  const router = useRouter();
+  const handleClick = (e: any) => {
+    e.preventDefault();
+    router.push(asd2);
+  };
   return (
     <main className={styles.main}>
       <div className={styles.description}>
         <Test></Test>
-        <Link href={asd2}>/</Link>
+        <span onClick={handleClick}>/inndex</span>
+        <Link href={asd2}>inx</Link>
         <Link href={asd}>about</Link>
         <p>
           Get started by editing&nbsp;
