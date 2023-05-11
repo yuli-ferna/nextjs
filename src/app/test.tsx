@@ -1,17 +1,12 @@
 import { Test } from '@/component/test'
 import Image from 'next/image'
-import Link from 'next/link'
 import styles from './page.module.scss'
 
-export default function Home() {
-  const asd2 = '/'
-  const asd = '/about'
+export default function Test1() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
         <Test></Test>
-        <Link href={asd2}>/</Link>
-        <Link href={asd}>about</Link>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
