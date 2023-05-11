@@ -1,7 +1,9 @@
+"use client" ;
+
 import { Test } from '@/component/test'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import styles from './page.module.scss'
 
 export default function Home() {
