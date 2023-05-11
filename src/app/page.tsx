@@ -8,11 +8,16 @@ import styles from './page.module.scss'
 
 export default function Home() {
   const asd2 = '/'
+  const asd3 = '/index'
   const asd = '/about'
   const router = useRouter();
   const handleClick = (e: any) => {
     e.preventDefault();
     router.push(asd2);
+  };
+  const handleClick2 = (e: any) => {
+    e.preventDefault();
+    router.push(asd3);
   };
   return (
     <main className={styles.main}>
@@ -20,7 +25,12 @@ export default function Home() {
         <Test></Test>
         <span onClick={handleClick}>/inndex</span>
         <Link href={asd2}>inx</Link>
+        <a href={asd2}>inx</a>
+        <Link href={''} ><a href={asd2}>inx</a></Link>
         <Link href={asd}>about</Link>
+        <Link href={asd3}>inx</Link>
+        <span onClick={handleClick2}>/inndex</span>
+        
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
